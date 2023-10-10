@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça o Recife</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: aliceblue;
+            color: darkcyan;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            width: 200px;
+            height: auto;
+        }
+        nav {
+            margin-left: auto; /* Alinha à direita */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: darkcyan;
+            margin: 0 20px; /* Espaçamento entre os itens do menu */
+            font-weight: bold; /* Deixa o texto em negrito */
+            transition: color 0.3s; /* Efeito de transição de cor */
+        }
+        nav a:hover {
+            color: #333; /* Cor ao passar o mouse */
+        }
+        main {
+            padding: 0;
+            position: relative;
+        }
+        main .background {
+            position: relative;
+        }
+        main .background img {
+            width: 100%;
+            height: auto;
+            max-height: 100vh; /* Limita a altura à altura da tela */
+            display: block;
+        }
+        main .content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(2, 57, 102, 0.7);
+            color: white;
+            padding: 5px;
+        }
+        main .content h1 {
+            font-size: 3em;
+            text-align: left;
+        }
+        main .content p {
+            font-size: 1.2em;
+            text-align: left;
+        }
+        footer {
+            background-color: #009191cb;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/img/logorecife.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="#conheca-o-recife">CONHEÇA O RECIFE</a>
+            <a href="#mapa-cultural">MAPA CULTURAL</a>
+            <a href="#contato">CONTATO</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="background">
+            <img src="/img/fotorecife.jpg" alt="Imagem">
+        </div>
+        <div class="content">
+            <h1>Recife tem encantos mil!</h1>
+            <p>Venha conhecer o Recife, uma cidade cheia de vida e cultura, onde cada esquina revela seus encantos mil.
+            <br>Explore suas praias deslumbrantes, mergulhe na rica história e desfrute da vibrante cena cultural.
+            <br>O Recife espera por você para uma experiência única e inesquecível.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; Prefeitura Municipal do Recife, 2023</p>
+    </footer>
+</body>
+</html>
